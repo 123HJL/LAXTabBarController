@@ -8,10 +8,12 @@
 
 import UIKit
 
-class RootViewController: UITabBarController, LAXTabBarDelegate {
+class RootViewController: UITabBarController, UITabBarControllerDelegate, LAXTabBarDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.delegate = self
 
         let tabBar = LAXTabBar.init(delegate: self)
         self.setValue(tabBar, forKey: "tabBar")
@@ -24,11 +26,21 @@ class RootViewController: UITabBarController, LAXTabBarDelegate {
             // Fallback on earlier versions
         }
         
+        self.addViewController()
+        
+    }
+    
+    func addViewController() {
         let vc1 = MainViewController()
         let vc2 = AttentionViewController()
         let vc3 = UIViewController()
         let vc4 = CommuntityViewController()
         let vc5 = MineViewController()
+        
+        vc1.title = TabBar_Title_1
+        vc2.title = TabBar_Title_2
+        vc4.title = TabBar_Title_4
+        vc5.title = TabBar_Title_5
         
         vc1.view.backgroundColor = BlueColor
         vc2.view.backgroundColor = GreenColor
@@ -41,26 +53,31 @@ class RootViewController: UITabBarController, LAXTabBarDelegate {
         let nvc4 = UINavigationController.init(rootViewController: vc4)
         let nvc5 = UINavigationController.init(rootViewController: vc5)
         
-        nvc1.tabBarItem.title = "首页"
-        nvc2.tabBarItem.title = "关注"
-        nvc4.tabBarItem.title = "社区"
-        nvc5.tabBarItem.title = "我的"
+        nvc1.tabBarItem.title = TabBar_Title_1
+        nvc2.tabBarItem.title = TabBar_Title_2
+        nvc4.tabBarItem.title = TabBar_Title_4
+        nvc5.tabBarItem.title = TabBar_Title_5
         
-        nvc1.tabBarItem.image = UIImage.init(named: "btn_home_normal")
-        nvc1.tabBarItem.selectedImage = UIImage.init(named: "btn_home_selected")
-        nvc2.tabBarItem.image = UIImage.init(named: "btn_attention_normal")
-        nvc2.tabBarItem.selectedImage = UIImage.init(named: "btn_attention_selected")
-        nvc4.tabBarItem.image = UIImage.init(named: "btn_search_normal")
-        nvc4.tabBarItem.selectedImage = UIImage.init(named: "btn_search_selected")
-        nvc5.tabBarItem.image = UIImage.init(named: "btn_user_normal")
-        nvc5.tabBarItem.selectedImage = UIImage.init(named: "btn_user_selected")
+        nvc1.tabBarItem.image = UIImage.init(named: TabBar_Image_1)
+        nvc2.tabBarItem.image = UIImage.init(named: TabBar_Image_2)
+        nvc4.tabBarItem.image = UIImage.init(named: TabBar_Image_4)
+        nvc5.tabBarItem.image = UIImage.init(named: TabBar_Image_5)
+        
+        nvc1.tabBarItem.selectedImage = UIImage.init(named: TabBar_Image_Selected_1)
+        nvc2.tabBarItem.selectedImage = UIImage.init(named: TabBar_Image_Selected_2)
+        nvc4.tabBarItem.selectedImage = UIImage.init(named: TabBar_Image_Selected_4)
+        nvc5.tabBarItem.selectedImage = UIImage.init(named: TabBar_Image_Selected_5)
         
         nvc3.tabBarItem.isEnabled = false
         self.viewControllers = [nvc1, nvc2, nvc3, nvc4, nvc5]
         self.selectedIndex = 0
-        
     }
-
+    
+    //delegate
+    func tabBarController(_ tabBarController: UITabBarController, animationControllerForTransitionFrom fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return LAXAnimationManager()
+    }
+    
     func tabBarDidClickPlusButton(_: LAXTabBar) {
         let vc = LiveViewController()
         self.present(vc, animated: true, completion: nil)

@@ -23,10 +23,11 @@ let BackgroundColor = WhiteColor
 let TabBarColor = RedColor
 let navigationBarColor = RedColor
 
+let DefaultDuration = 0.5
 
 let ScreenWidth = UIScreen.main.bounds.size.width
 let ScreenHeight = UIScreen.main.bounds.size.height
 
-let PlusButtonImage = "head"
+let TabBarTitleArray = [TabBar_Title_1, TabBar_Title_2, TabBar_Title_4, TabBar_Title_5]
 
 

@@ -13,7 +13,7 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationController?.navigationBar.tintColor = navigationBarColor
+        self.navigationController?.navigationBar.barTintColor = navigationBarColor
         self.hiddenNavigationBar()
         
     }
