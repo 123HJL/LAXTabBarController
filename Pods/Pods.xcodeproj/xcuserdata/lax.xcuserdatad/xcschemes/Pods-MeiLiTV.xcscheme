@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "532F274766CECD6ED5516CDB4101516C"
+               BlueprintIdentifier = "1C3A5E8E2FF47E970E89DCB5D9449880"
                BuildableName = "Pods_MeiLiTV.framework"
                BlueprintName = "Pods-MeiLiTV"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "532F274766CECD6ED5516CDB4101516C"
+            BlueprintIdentifier = "1C3A5E8E2FF47E970E89DCB5D9449880"
             BuildableName = "Pods_MeiLiTV.framework"
             BlueprintName = "Pods-MeiLiTV"
             ReferencedContainer = "container:Pods.xcodeproj">

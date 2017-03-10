@@ -10,7 +10,6 @@
 		12B281A79D4E8810940B20AD /* Pods_MeiLiTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B8ECB851C9262C3B9BC0A5 /* Pods_MeiLiTV.framework */; };
 		573FC64F1E710AB700443B6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573FC6371E710AB700443B6C /* LaunchScreen.storyboard */; };
 		573FC6511E710AB700443B6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573FC63B1E710AB700443B6C /* Main.storyboard */; };
-		573FC6521E710AB700443B6C /* LAXAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 573FC6411E710AB700443B6C /* LAXAnimation.m */; };
 		573FC6531E710AB700443B6C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573FC6471E710AB700443B6C /* LoginViewController.swift */; };
 		573FC6561E710AB700443B6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573FC64D1E710AB700443B6C /* AppDelegate.swift */; };
 		573FC6571E710AB700443B6C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 573FC64E1E710AB700443B6C /* Info.plist */; };
@@ -31,14 +30,14 @@
 		573FC6821E71305000443B6C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573FC6811E71305000443B6C /* BaseViewController.swift */; };
 		573FC6851E71470800443B6C /* LAXTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573FC6841E71470800443B6C /* LAXTabBar.swift */; };
 		573FC6881E7152EF00443B6C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573FC6861E7152EF00443B6C /* RootViewController.swift */; };
+		574A6FFB1E72916C00071CC0 /* LAXAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 574A6FFA1E72916C00071CC0 /* LAXAnimation.m */; };
+		574A6FFD1E72919100071CC0 /* LAXAnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574A6FFC1E72919100071CC0 /* LAXAnimationManager.swift */; };
 		57CE03991E6FF8C6005A0780 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57CE03981E6FF8C6005A0780 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		573FC6381E710AB700443B6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		573FC63C1E710AB700443B6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
-		573FC6401E710AB700443B6C /* LAXAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAXAnimation.h; sourceTree = "<group>"; };
-		573FC6411E710AB700443B6C /* LAXAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAXAnimation.m; sourceTree = "<group>"; };
 		573FC6431E710AB700443B6C /* MeiLiTVBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeiLiTVBridgingHeader.h; sourceTree = "<group>"; };
 		573FC6471E710AB700443B6C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		573FC64D1E710AB700443B6C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +60,9 @@
 		573FC6811E71305000443B6C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		573FC6841E71470800443B6C /* LAXTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAXTabBar.swift; sourceTree = "<group>"; };
 		573FC6861E7152EF00443B6C /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		574A6FF91E72916C00071CC0 /* LAXAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAXAnimation.h; sourceTree = "<group>"; };
+		574A6FFA1E72916C00071CC0 /* LAXAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAXAnimation.m; sourceTree = "<group>"; };
+		574A6FFC1E72919100071CC0 /* LAXAnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAXAnimationManager.swift; sourceTree = "<group>"; };
 		57CE038E1E6FF8C5005A0780 /* MeiLiTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeiLiTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CE03981E6FF8C6005A0780 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78B8ECB851C9262C3B9BC0A5 /* Pods_MeiLiTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeiLiTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,18 +110,9 @@
 		573FC63E1E710AB700443B6C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				573FC63F1E710AB700443B6C /* LAXAnnimation */,
+				574A6FF81E72916C00071CC0 /* LAXAnimation */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		573FC63F1E710AB700443B6C /* LAXAnnimation */ = {
-			isa = PBXGroup;
-			children = (
-				573FC6401E710AB700443B6C /* LAXAnimation.h */,
-				573FC6411E710AB700443B6C /* LAXAnimation.m */,
-			);
-			path = LAXAnnimation;
 			sourceTree = "<group>";
 		};
 		573FC6421E710AB700443B6C /* Util */ = {
@@ -128,6 +121,7 @@
 				573FC6431E710AB700443B6C /* MeiLiTVBridgingHeader.h */,
 				573FC6631E71205D00443B6C /* InterfaceHeader.h */,
 				573FC6641E71212800443B6C /* ConstantHeader.swift */,
+				574A6FFC1E72919100071CC0 /* LAXAnimationManager.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -233,6 +227,15 @@
 				573FC6841E71470800443B6C /* LAXTabBar.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		574A6FF81E72916C00071CC0 /* LAXAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				574A6FF91E72916C00071CC0 /* LAXAnimation.h */,
+				574A6FFA1E72916C00071CC0 /* LAXAnimation.m */,
+			);
+			path = LAXAnimation;
 			sourceTree = "<group>";
 		};
 		57CE03851E6FF8C5005A0780 = {
@@ -413,6 +416,7 @@
 				573FC67F1E712E9000443B6C /* MineViewController.swift in Sources */,
 				573FC65C1E71168700443B6C /* RegisterViewController.swift in Sources */,
 				573FC6531E710AB700443B6C /* LoginViewController.swift in Sources */,
+				574A6FFB1E72916C00071CC0 /* LAXAnimation.m in Sources */,
 				573FC6561E710AB700443B6C /* AppDelegate.swift in Sources */,
 				573FC6821E71305000443B6C /* BaseViewController.swift in Sources */,
 				573FC67B1E712E8300443B6C /* CommuntityViewController.swift in Sources */,
@@ -420,8 +424,8 @@
 				573FC6731E712E6700443B6C /* AttentionViewController.swift in Sources */,
 				573FC6881E7152EF00443B6C /* RootViewController.swift in Sources */,
 				573FC6651E71212800443B6C /* ConstantHeader.swift in Sources */,
+				574A6FFD1E72919100071CC0 /* LAXAnimationManager.swift in Sources */,
 				573FC6771E712E7400443B6C /* LiveViewController.swift in Sources */,
-				573FC6521E710AB700443B6C /* LAXAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

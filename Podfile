@@ -6,10 +6,5 @@ target 'MeiLiTV' do
   use_frameworks!
 
   # Pods for MeiLiTV
-
-  pod 'AFNetworking'
-  pod 'JSONModel'
-  pod 'MJRefresh'
-  pod 'SDWebImage'
   
 end
