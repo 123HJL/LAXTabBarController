@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow.init(frame: UIScreen.main.bounds)
-        window?.backgroundColor = BackgroundColor
+        window?.backgroundColor = UIColor.white
         enterMainViewController()
         window?.makeKeyAndVisible()
         
@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func enterLoginViewController() {
-        window?.rootViewController = LoginViewController()
+        window?.rootViewController = UIViewController()
     }
     
     func enterMainViewController() {

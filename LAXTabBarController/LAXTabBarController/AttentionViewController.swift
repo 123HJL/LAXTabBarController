@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  AttentionViewController.swift
 //  MeiLiTV
 //
 //  Created by 冰凉的枷锁 on 2017/3/9.
@@ -8,12 +8,13 @@
 
 import UIKit
 
-class MainViewController: BaseViewController {
+class AttentionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

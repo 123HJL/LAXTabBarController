@@ -1,5 +1,5 @@
 //
-//  AttentionViewController.swift
+//  CommuntityViewController.swift
 //  MeiLiTV
 //
 //  Created by 冰凉的枷锁 on 2017/3/9.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AttentionViewController: BaseViewController {
+class CommuntityViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,5 @@
 //
-//  RegisterViewController.swift
+//  LiveViewController.swift
 //  MeiLiTV
 //
 //  Created by 冰凉的枷锁 on 2017/3/9.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegisterViewController: BaseViewController {
+class LiveViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,14 +21,7 @@ class RegisterViewController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    @IBAction func registerAction(_ sender: UIButton) {
-        LAXAnimation.bowenAnimation()
-        (UIApplication.shared.delegate as! AppDelegate).enterMainViewController()
-    }
-    
     @IBAction func returnAction(_ sender: UIButton) {
-        LAXAnimation.tuijiAnimation(with: LAXDirectionLeft)
         self.dismiss(animated: true, completion: nil)
     }
 

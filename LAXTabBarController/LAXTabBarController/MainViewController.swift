@@ -1,5 +1,5 @@
 //
-//  CommuntityViewController.swift
+//  MainViewController.swift
 //  MeiLiTV
 //
 //  Created by 冰凉的枷锁 on 2017/3/9.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CommuntityViewController: BaseViewController {
+class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
